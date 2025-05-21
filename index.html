@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DataLeakShield</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DataLeakShield</h1>
+    <p class="tagline">Scan. Secure. Sleep Better.</p>
+    <input type="email" id="emailInput" placeholder="Enter your email" />
+    <button onclick="runScan()">Start Scan</button>
+
+    <div id="results" style="display:none;">
+      <h2> Cyber Risk Score: <span id="score"></span>/100</h2>
+      <div class="breaches"></div>
+      <h3>Fix-It Checklist:</h3>
+      <ul id="checklist"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
